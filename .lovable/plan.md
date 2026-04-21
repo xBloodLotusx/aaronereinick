@@ -16,7 +16,7 @@ A polished, single-page site in a clean white & deep blue executive style, optim
 2. **Hero**
    - Headline: *"Unlock Sustainable Cost Savings Without Compromising Performance"*
    - Subheadline as provided.
-   - Primary CTA "Start Your Cost Reduction Plan" + secondary "Schedule a Consultation" (both scroll to contact).
+   - Primary CTA "Schedule Consultation" + secondary "Schedule a Consultation" (both scroll to contact).
    - Right side: portrait placeholder (rounded card with subtle navy border, "Photo coming soon" label).
    - Trust strip beneath: *$1.7B+ Global Savings • 20% Avg Cost Reduction • 40+ Expense Categories • Success-Based Model*.
 

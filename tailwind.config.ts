@@ -13,7 +13,26 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
       colors: {
+        navy: {
+          DEFAULT: '#0B2545',
+          light: '#1a3a63',
+          dark: '#061323',
+        },
+        steel: {
+          DEFAULT: '#2E6DA4',
+          light: '#4a8bc4',
+          dark: '#1e4d7a',
+        },
+        gold: {
+          DEFAULT: '#C9960C',
+          light: '#E5B230',
+          dark: '#9a720a',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

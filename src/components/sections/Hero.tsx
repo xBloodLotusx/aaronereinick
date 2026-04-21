@@ -10,8 +10,8 @@ const TRUST_ITEMS = [
 
 export function Hero() {
   return (
-    <section id="hero" className="pt-20 md:pt-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28">
+    <section id="hero" className="pt-8 md:pt-12 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
         <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           <div>
             <p className="text-steel font-sans text-sm font-semibold uppercase tracking-widest mb-4">

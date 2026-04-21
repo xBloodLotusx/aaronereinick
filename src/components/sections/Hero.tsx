@@ -12,8 +12,7 @@ export function Hero() {
   return (
     <section id="hero" className="pt-20 md:pt-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-          {/* Left: headline + CTA */}
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start">
           <div>
             <p className="text-steel font-sans text-sm font-semibold uppercase tracking-widest mb-4">
               ERA Group Cost Optimization Strategist
@@ -23,14 +22,14 @@ export function Hero() {
             </h1>
             {/* Mobile portrait: show between headline and description on small screens only */}
             <div className="block md:hidden my-6">
-              <div className="relative mx-auto w-56 h-72 rounded-2xl border-2 border-navy/20 bg-gradient-to-br from-slate-50 to-slate-100 shadow-xl overflow-hidden">
+              <div className="relative mx-auto w-72 h-96 rounded-2xl border-2 border-navy/20 bg-gradient-to-br from-slate-50 to-slate-100 shadow-xl overflow-hidden">
                 <img
                   src={aaronPhoto}
                   alt="Aaron E. Reinick"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-gold/10 rounded-full border border-gold/20 -z-10" />
-                <div className="absolute -top-2 -left-2 w-8 h-8 bg-steel/10 rounded-full border border-steel/20 -z-10" />
+                    <div className="absolute -bottom-4 -right-4 w-20 h-20 bg-gold/10 rounded-full border border-gold/20 -z-10" />
+                    <div className="absolute -top-3 -left-3 w-10 h-10 bg-steel/10 rounded-full border border-steel/20 -z-10" />
               </div>
             </div>
             <p className="text-slate-600 text-lg leading-relaxed mb-8">
@@ -49,16 +48,16 @@ export function Hero() {
           </div>
 
           {/* Right: portrait placeholder */}
-          <div className="hidden md:flex justify-end">
-            <div className="relative -mt-12 md:-mt-16 lg:-mt-20 w-80 h-96 md:w-[30rem] md:h-[36rem] rounded-2xl border-2 border-navy/20 bg-gradient-to-br from-slate-50 to-slate-100 shadow-xl overflow-hidden">
+              <div className="hidden md:flex justify-end items-start">
+            <div className="relative w-80 h-96 md:w-[30rem] md:h-[36rem] rounded-2xl border-2 border-navy/20 bg-gradient-to-br from-slate-50 to-slate-100 shadow-xl overflow-hidden">
               <img
                 src={aaronPhoto}
                 alt="Aaron E. Reinick"
                 className="w-full h-full object-cover"
               />
               {/* Decorative accents */}
-              <div className="absolute -bottom-3 -right-3 w-20 h-20 bg-gold/10 rounded-full border border-gold/20 -z-10" />
-              <div className="absolute -top-2 -left-2 w-10 h-10 bg-steel/10 rounded-full border border-steel/20 -z-10" />
+                  <div className="absolute -bottom-3 -right-3 w-20 h-20 bg-gold/10 rounded-full border border-gold/20 -z-10" />
+                  <div className="absolute -top-2 -left-2 w-10 h-10 bg-steel/10 rounded-full border border-steel/20 -z-10" />
             </div>
           </div>
         </div>

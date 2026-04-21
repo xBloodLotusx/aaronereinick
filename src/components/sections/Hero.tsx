@@ -12,7 +12,7 @@ export function Hero() {
   return (
     <section id="hero" className="pt-20 md:pt-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
           {/* Left: headline + CTA */}
           <div>
             <p className="text-steel font-sans text-sm font-semibold uppercase tracking-widest mb-4">
@@ -21,6 +21,18 @@ export function Hero() {
             <h1 className="font-serif text-4xl md:text-5xl lg:text-[3.25rem] leading-tight text-navy mb-6">
               Unlock Sustainable Cost Savings Without Compromising Performance
             </h1>
+            {/* Mobile portrait: show between headline and description on small screens only */}
+            <div className="block md:hidden my-6">
+              <div className="relative mx-auto w-56 h-72 rounded-2xl border-2 border-navy/20 bg-gradient-to-br from-slate-50 to-slate-100 shadow-xl overflow-hidden">
+                <img
+                  src={aaronPhoto}
+                  alt="Aaron E. Reinick"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-gold/10 rounded-full border border-gold/20 -z-10" />
+                <div className="absolute -top-2 -left-2 w-8 h-8 bg-steel/10 rounded-full border border-steel/20 -z-10" />
+              </div>
+            </div>
             <p className="text-slate-600 text-lg leading-relaxed mb-8">
               Aaron E. Reinick partners with executives to systematically identify, capture, and sustain
               cost reductions across all major spend categories — delivered through a proven, success-based
@@ -37,7 +49,7 @@ export function Hero() {
           </div>
 
           {/* Right: portrait placeholder */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="hidden md:flex justify-end">
             <div className="relative -mt-12 md:-mt-16 lg:-mt-20 w-80 h-96 md:w-[30rem] md:h-[36rem] rounded-2xl border-2 border-navy/20 bg-gradient-to-br from-slate-50 to-slate-100 shadow-xl overflow-hidden">
               <img
                 src={aaronPhoto}
